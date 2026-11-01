@@ -9,7 +9,7 @@
 [![Institutional Initiative](https://img.shields.io/badge/Institution-NIT_Karnataka,_Surathkal-0284c7?style=flat-square&labelColor=0f172a)](https://www.nitk.ac.in)
 [![Live Platform](https://img.shields.io/badge/Live_Site-filevault.cc-6366f1?style=flat-square&labelColor=0f172a)](https://filevault.cc)
 [![Claude Max Specifications](https://img.shields.io/badge/Specifications-Claude_Max_Enabled-f59e0b?style=flat-square&labelColor=0f172a)](CLAUDE_MAX_SPECIFICATIONS.md)
-[![License](https://img.shields.io/badge/License-MIT-818cf8?style=flat-square&labelColor=0f172a)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache_2.0-818cf8?style=flat-square&labelColor=0f172a)](LICENSE)
 
 <br/>
 
@@ -98,12 +98,12 @@ All architectural blueprints are rendered as scalable, publication-grade vector 
 **Sai Varshith M**  
 B.Tech Scholar, National Institute of Technology Karnataka, Surathkal  
 Lead Architect & Creator of FileVault  
+* Institutional Inquiries: `saivarshith.mitukula@gmail.com`  
 * Project Website: [https://filevault.cc](https://filevault.cc)  
-* Organization: [FileVault-NITK](https://github.com/FileVault-NITK)  
-* Inquiries: `saivarshith.nitk@gmail.com`
+* Organization: [FileVault-NITK](https://github.com/FileVault-NITK)
 
 ---
 
 <div align="center">
-<sub>FileVault is an open academic initiative dedicated to high-performance, equitable educational resource distribution. © 2026 FileVault NITK. Released under the MIT License.</sub>
+<sub>FileVault is an open academic initiative dedicated to high-performance, equitable educational resource distribution. © 2026 FileVault NITK. Released under the Apache 2.0 License.</sub>
 </div>
