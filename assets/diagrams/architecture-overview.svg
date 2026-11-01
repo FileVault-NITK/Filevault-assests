@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="100%" height="100%" style="background:#090d16; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="accentIndigo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="accentEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="accentAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    
+    <filter id="glowIndigo" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="shadowBox" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="780" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#334155" stroke-width="0.5" stroke-opacity="0.2">
+    <path d="M0,130 L1200,130 M0,270 L1200,270 M0,410 L1200,410 M0,550 L1200,550 M0,690 L1200,690"/>
+    <path d="M150,0 L150,780 M350,0 L350,780 M600,0 L600,780 M850,0 L850,780 M1050,0 L1050,780"/>
+  </g>
+
+  <!-- Title Header -->
+  <g transform="translate(60, 48)">
+    <rect x="0" y="0" width="38" height="38" rx="8" fill="url(#accentIndigo)" filter="url(#glowIndigo)"/>
+    <text x="19" y="25" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="900">FV</text>
+    <text x="52" y="24" fill="#ffffff" font-size="22" font-weight="800" letter-spacing="-0.5">FILEVAULT</text>
+    <text x="175" y="24" fill="#6366f1" font-size="22" font-weight="800">·</text>
+    <text x="190" y="24" fill="#94a3b8" font-size="16" font-weight="600">Enterprise Cloud Architecture &amp; System Topology</text>
+    <rect x="940" y="4" width="140" height="28" rx="14" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+    <text x="1010" y="22" text-anchor="middle" fill="#818cf8" font-size="11" font-weight="700" letter-spacing="0.5">CLOUD MAX SPEC</text>
+  </g>
+
+  <!-- Top Banner / Tier 1: Client Experience -->
+  <g transform="translate(60, 105)" filter="url(#shadowBox)">
+    <rect width="1080" height="110" rx="14" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.4"/>
+    <rect x="20" y="16" width="6" height="78" rx="3" fill="url(#accentCyan)"/>
+    <text x="36" y="38" fill="#38bdf8" font-size="13" font-weight="700" letter-spacing="1">TIER 1 · ZERO-FRICTION CLIENT INTERFACE</text>
+    <text x="36" y="64" fill="#ffffff" font-size="18" font-weight="700">Lightweight SPA &amp; PWA Client (No-Build Frameworkless Architecture)</text>
+    <text x="36" y="86" fill="#94a3b8" font-size="13">Native Instant Search · In-Browser Multi-Format Previews (PDF/Video/Audio/Code) · Client-Side ZIP Packaging · Compare View</text>
+    
+    <!-- Badges -->
+    <rect x="850" y="38" width="95" height="34" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="897" y="59" text-anchor="middle" fill="#38bdf8" font-size="12" font-weight="600">Sub-100ms TTFB</text>
+    <rect x="955" y="38" width="105" height="34" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+    <text x="1007" y="59" text-anchor="middle" fill="#34d399" font-size="12" font-weight="600">100% Client-Side</text>
+  </g>
+
+  <!-- Connector Down Arrow -->
+  <g transform="translate(600, 222)">
+    <line x1="0" y1="0" x2="0" y2="28" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4,4"/>
+    <polygon points="-4,28 4,28 0,34" fill="#38bdf8"/>
+  </g>
+
+  <!-- Tier 2: Edge Delivery & Security Shield -->
+  <g transform="translate(60, 260)" filter="url(#shadowBox)">
+    <rect width="1080" height="115" rx="14" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.4"/>
+    <rect x="20" y="16" width="6" height="83" rx="3" fill="url(#accentIndigo)"/>
+    <text x="36" y="38" fill="#818cf8" font-size="13" font-weight="700" letter-spacing="1">TIER 2 · GLOBAL CDN &amp; EDGE SECURITY SHIELD</text>
+    <text x="36" y="64" fill="#ffffff" font-size="18" font-weight="700">Edge Caching, Anycast DNS, SSL Termination &amp; reCAPTCHA Bot Protection</text>
+    
+    <g transform="translate(36, 75)">
+      <rect x="0" y="5" width="235" height="26" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="1"/>
+      <text x="117" y="22" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Global Cloud CDN Edge Cache</text>
+
+      <rect x="245" y="5" width="220" height="26" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="1"/>
+      <text x="355" y="22" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">WAF &amp; Rate-Limiting Protection</text>
+
+      <rect x="475" y="5" width="250" height="26" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="1"/>
+      <text x="600" y="22" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Google reCAPTCHA v3 &amp; Webhooks</text>
+
+      <rect x="735" y="5" width="295" height="26" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="1"/>
+      <text x="882" y="22" text-anchor="middle" fill="#c7d2fe" font-size="11" font-weight="600">Dynamic Edge Manifest Compression (Brotli)</text>
+    </g>
+  </g>
+
+  <!-- Connectors Split to 3 Columns -->
+  <path d="M 240,380 L 240,410" stroke="#6366f1" stroke-width="2" stroke-dasharray="4,4"/>
+  <polygon points="236,410 244,410 240,416" fill="#6366f1"/>
+  
+  <path d="M 600,380 L 600,410" stroke="#10b981" stroke-width="2" stroke-dasharray="4,4"/>
+  <polygon points="596,410 604,410 600,416" fill="#10b981"/>
+
+  <path d="M 960,380 L 960,410" stroke="#a855f7" stroke-width="2" stroke-dasharray="4,4"/>
+  <polygon points="956,410 964,410 960,416" fill="#a855f7"/>
+
+  <!-- Tier 3: Core Cloud Services (3 Column Layout) -->
+  
+  <!-- Column 1: Compute & Gateway -->
+  <g transform="translate(60, 420)" filter="url(#shadowBox)">
+    <rect width="335" height="250" rx="14" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1.2"/>
+    <rect x="18" y="16" width="4" height="218" rx="2" fill="url(#accentIndigo)"/>
+    <text x="32" y="36" fill="#818cf8" font-size="12" font-weight="700" letter-spacing="0.5">COMPUTE &amp; ACCESS</text>
+    <text x="32" y="58" fill="#ffffff" font-size="16" font-weight="700">Edge Compute &amp; API Layer</text>
+    
+    <g transform="translate(32, 75)" font-size="12" fill="#cbd5e1">
+      <circle cx="6" cy="12" r="3" fill="#6366f1"/>
+      <text x="16" y="16" font-weight="600">Supabase Edge Functions</text>
+      <text x="16" y="32" fill="#94a3b8" font-size="11">Protected token validation &amp; streaming</text>
+
+      <circle cx="6" cy="56" r="3" fill="#6366f1"/>
+      <text x="16" y="60" font-weight="600">Pre-Signed URL Dispatcher</text>
+      <text x="16" y="76" fill="#94a3b8" font-size="11">Timed, cryptographic access tokens</text>
+
+      <circle cx="6" cy="100" r="3" fill="#6366f1"/>
+      <text x="16" y="104" font-weight="600">PostgreSQL + Row-Level Security</text>
+      <text x="16" y="120" fill="#94a3b8" font-size="11">Granular user profiles &amp; contribution audits</text>
+
+      <circle cx="6" cy="144" r="3" fill="#6366f1"/>
+      <text x="16" y="148" font-weight="600">Automated Webhooks Bridge</text>
+      <text x="16" y="164" fill="#94a3b8" font-size="11">Google Sheets live contributor sync</text>
+    </g>
+  </g>
+
+  <!-- Column 2: Storage Infrastructure -->
+  <g transform="translate(420, 420)" filter="url(#shadowBox)">
+    <rect width="360" height="250" rx="14" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="18" y="16" width="4" height="218" rx="2" fill="url(#accentEmerald)"/>
+    <text x="32" y="36" fill="#34d399" font-size="12" font-weight="700" letter-spacing="0.5">STORAGE TIERING</text>
+    <text x="32" y="58" fill="#ffffff" font-size="16" font-weight="700">Multi-Tier Object Storage</text>
+
+    <g transform="translate(32, 75)" font-size="12" fill="#cbd5e1">
+      <circle cx="6" cy="12" r="3" fill="#10b981"/>
+      <text x="16" y="16" font-weight="600">Hot Tier · Cloud Object Store (S3/GCS)</text>
+      <text x="16" y="32" fill="#94a3b8" font-size="11">Sub-second download of current semester notes</text>
+
+      <circle cx="6" cy="56" r="3" fill="#10b981"/>
+      <text x="16" y="60" font-weight="600">Warm Tier · Hugging Face Hub Datasets</text>
+      <text x="16" y="76" fill="#94a3b8" font-size="11">Git LFS high-capacity academic resource datasets</text>
+
+      <circle cx="6" cy="100" r="3" fill="#10b981"/>
+      <text x="16" y="104" font-weight="600">Cold Tier · Immutable Archival Storage</text>
+      <text x="16" y="120" fill="#94a3b8" font-size="11">Historical 10-year question bank &amp; syllabus</text>
+
+      <circle cx="6" cy="144" r="3" fill="#10b981"/>
+      <text x="16" y="148" font-weight="600">In-Memory Redis Cache</text>
+      <text x="16" y="164" fill="#94a3b8" font-size="11">Sub-millisecond manifest &amp; search index lookups</text>
+    </g>
+  </g>
+
+  <!-- Column 3: AI Document Intelligence (Cloud Max Capability) -->
+  <g transform="translate(805, 420)" filter="url(#shadowBox)">
+    <rect width="335" height="250" rx="14" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1.2"/>
+    <rect x="18" y="16" width="4" height="218" rx="2" fill="url(#accentPurple)"/>
+    <text x="32" y="36" fill="#c084fc" font-size="12" font-weight="700" letter-spacing="0.5">CLOUD MAX AI ENGINE</text>
+    <text x="32" y="58" fill="#ffffff" font-size="16" font-weight="700">Document Intelligence &amp; Search</text>
+
+    <g transform="translate(32, 75)" font-size="12" fill="#cbd5e1">
+      <circle cx="6" cy="12" r="3" fill="#a855f7"/>
+      <text x="16" y="16" font-weight="600">Multimodal OCR &amp; Handwriting Engine</text>
+      <text x="16" y="32" fill="#94a3b8" font-size="11">Extract formulas &amp; handwritten lecture text</text>
+
+      <circle cx="6" cy="56" r="3" fill="#a855f7"/>
+      <text x="16" y="60" font-weight="600">Dense Vector Search (pgvector)</text>
+      <text x="16" y="76" fill="#94a3b8" font-size="11">Semantic search across slides, PDFs &amp; guides</text>
+
+      <circle cx="6" cy="100" r="3" fill="#a855f7"/>
+      <text x="16" y="104" font-weight="600">RAG Academic Study Assistant</text>
+      <text x="16" y="120" fill="#94a3b8" font-size="11">Automated chapter summaries &amp; practice quizzes</text>
+
+      <circle cx="6" cy="144" r="3" fill="#a855f7"/>
+      <text x="16" y="148" font-weight="600">Intelligent Deduplication &amp; Tagger</text>
+      <text x="16" y="164" fill="#94a3b8" font-size="11">Perceptual hashing &amp; automatic subject routing</text>
+    </g>
+  </g>
+
+  <!-- Footer Banner -->
+  <g transform="translate(60, 695)">
+    <rect width="1080" height="50" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="30" fill="#94a3b8" font-size="13">
+      <tspan fill="#38bdf8" font-weight="700">FileVault Academic Cloud Initiative</tspan> · National Institute of Technology Karnataka, Surathkal · Designed for High-Throughput &amp; Zero-Knowledge Academic Data
+    </text>
+    <text x="1050" y="30" text-anchor="end" fill="#64748b" font-size="12">Confidential &amp; Proprietary Documentation</text>
+  </g>
+</svg>

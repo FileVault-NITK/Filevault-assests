@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%" style="background:#090d16; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="accentRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+    <linearGradient id="accentGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="shadowBox" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+
+  <!-- Title Header -->
+  <g transform="translate(60, 48)">
+    <rect x="0" y="0" width="38" height="38" rx="8" fill="url(#accentGreen)"/>
+    <text x="19" y="25" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="900">🛡️</text>
+    <text x="52" y="24" fill="#ffffff" font-size="22" font-weight="800" letter-spacing="-0.5">FILEVAULT</text>
+    <text x="175" y="24" fill="#10b981" font-size="22" font-weight="800">·</text>
+    <text x="190" y="24" fill="#94a3b8" font-size="16" font-weight="600">Defense-in-Depth Security Architecture</text>
+    <rect x="910" y="4" width="170" height="28" rx="14" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+    <text x="995" y="22" text-anchor="middle" fill="#a7f3d0" font-size="11" font-weight="700" letter-spacing="0.5">ZERO-TRUST SECURITY</text>
+  </g>
+
+  <!-- 4 Concentric / Layered Defense Blocks -->
+  
+  <!-- Layer 1: Perimeter -->
+  <g transform="translate(60, 110)" filter="url(#shadowBox)">
+    <rect width="1080" height="115" rx="12" fill="url(#cardGrad)" stroke="#ef4444" stroke-width="1.2"/>
+    <rect x="20" y="16" width="6" height="83" rx="3" fill="url(#accentRed)"/>
+    <text x="36" y="38" fill="#f87171" font-size="13" font-weight="700" letter-spacing="1">LAYER 1 · PERIMETER &amp; BOT DEFENSE</text>
+    <text x="36" y="62" fill="#ffffff" font-size="16" font-weight="700">DDoS Mitigation, WAF Filtering &amp; Bot Detection</text>
+    
+    <g transform="translate(36, 75)" font-size="12">
+      <rect x="0" y="5" width="240" height="26" rx="6" fill="#450a0a" stroke="#dc2626" stroke-width="1"/>
+      <text x="120" y="22" text-anchor="middle" fill="#fca5a5" font-weight="600">Enterprise Anycast DDoS Shield</text>
+
+      <rect x="255" y="5" width="250" height="26" rx="6" fill="#450a0a" stroke="#dc2626" stroke-width="1"/>
+      <text x="380" y="22" text-anchor="middle" fill="#fca5a5" font-weight="600">Google reCAPTCHA v3 Behavioral Risk</text>
+
+      <rect x="520" y="5" width="255" height="26" rx="6" fill="#450a0a" stroke="#dc2626" stroke-width="1"/>
+      <text x="647" y="22" text-anchor="middle" fill="#fca5a5" font-weight="600">IP Reputation &amp; Adaptive Rate Limiting</text>
+
+      <rect x="790" y="5" width="240" height="26" rx="6" fill="#450a0a" stroke="#dc2626" stroke-width="1"/>
+      <text x="910" y="22" text-anchor="middle" fill="#fca5a5" font-weight="600">Strict TLS 1.3 &amp; HSTS Enforced</text>
+    </g>
+  </g>
+
+  <!-- Layer 2: API & Gateway Isolation -->
+  <g transform="translate(60, 245)" filter="url(#shadowBox)">
+    <rect width="1080" height="115" rx="12" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="20" y="16" width="6" height="83" rx="3" fill="#f59e0b"/>
+    <text x="36" y="38" fill="#fbbf24" font-size="13" font-weight="700" letter-spacing="1">LAYER 2 · API GATEWAY &amp; ACCESS CONTROL</text>
+    <text x="36" y="62" fill="#ffffff" font-size="16" font-weight="700">Tokenized File Streaming &amp; Supabase Edge Isolation</text>
+
+    <g transform="translate(36, 75)" font-size="12">
+      <rect x="0" y="5" width="255" height="26" rx="6" fill="#451a03" stroke="#d97706" stroke-width="1"/>
+      <text x="127" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">Zero-Secret Browser Exposure (Config.js)</text>
+
+      <rect x="270" y="5" width="245" height="26" rx="6" fill="#451a03" stroke="#d97706" stroke-width="1"/>
+      <text x="392" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">Edge Function Cryptographic Token Sign</text>
+
+      <rect x="530" y="5" width="245" height="26" rx="6" fill="#451a03" stroke="#d97706" stroke-width="1"/>
+      <text x="652" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">Short-Lived Signed URLs (15 Min TTL)</text>
+
+      <rect x="790" y="5" width="240" height="26" rx="6" fill="#451a03" stroke="#d97706" stroke-width="1"/>
+      <text x="910" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">HTTP-Only SameSite Cookie Bounds</text>
+    </g>
+  </g>
+
+  <!-- Layer 3: Database & Governance -->
+  <g transform="translate(60, 380)" filter="url(#shadowBox)">
+    <rect width="1080" height="115" rx="12" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.2"/>
+    <rect x="20" y="16" width="6" height="83" rx="3" fill="#3b82f6"/>
+    <text x="36" y="38" fill="#60a5fa" font-size="13" font-weight="700" letter-spacing="1">LAYER 3 · DATABASE &amp; DATA GOVERNANCE</text>
+    <text x="36" y="62" fill="#ffffff" font-size="16" font-weight="700">PostgreSQL Row-Level Security (RLS) &amp; Immutable Audit Logs</text>
+
+    <g transform="translate(36, 75)" font-size="12">
+      <rect x="0" y="5" width="240" height="26" rx="6" fill="#172554" stroke="#2563eb" stroke-width="1"/>
+      <text x="120" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Row-Level Security Policies (RLS)</text>
+
+      <rect x="255" y="5" width="250" height="26" rx="6" fill="#172554" stroke="#2563eb" stroke-width="1"/>
+      <text x="380" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Role-Based Access Control (Admin/Curator)</text>
+
+      <rect x="520" y="5" width="240" height="26" rx="6" fill="#172554" stroke="#2563eb" stroke-width="1"/>
+      <text x="640" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Automated Audit Trail of Submissions</text>
+
+      <rect x="775" y="5" width="255" height="26" rx="6" fill="#172554" stroke="#2563eb" stroke-width="1"/>
+      <text x="902" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Automated Sensitive Data Scrubbing</text>
+    </g>
+  </g>
+
+  <!-- Layer 4: Storage Encryption at Rest -->
+  <g transform="translate(60, 515)" filter="url(#shadowBox)">
+    <rect width="1080" height="115" rx="12" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="20" y="16" width="6" height="83" rx="3" fill="#10b981"/>
+    <text x="36" y="38" fill="#34d399" font-size="13" font-weight="700" letter-spacing="1">LAYER 4 · STORAGE AT-REST INTEGRITY &amp; CRYPTOGRAPHY</text>
+    <text x="36" y="62" fill="#ffffff" font-size="16" font-weight="700">AES-256 Encryption, SHA-256 Checksums &amp; Immutable Backup Replication</text>
+
+    <g transform="translate(36, 75)" font-size="12">
+      <rect x="0" y="5" width="245" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+      <text x="122" y="22" text-anchor="middle" fill="#a7f3d0" font-weight="600">AES-GCM-256 At-Rest Encryption</text>
+
+      <rect x="260" y="5" width="245" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+      <text x="382" y="22" text-anchor="middle" fill="#a7f3d0" font-weight="600">Cryptographic SHA-256 File Hashes</text>
+
+      <rect x="520" y="5" width="245" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+      <text x="642" y="22" text-anchor="middle" fill="#a7f3d0" font-weight="600">Cloud KMS Hardware Security Modules</text>
+
+      <rect x="780" y="5" width="250" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+      <text x="905" y="22" text-anchor="middle" fill="#a7f3d0" font-weight="600">Cross-Region Immutable Snapshots</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(60, 680)">
+    <text x="0" y="20" fill="#64748b" font-size="12">FileVault Defense-in-Depth Specification · Compliant with Institutional Data Integrity &amp; Student Privacy Best Practices</text>
+  </g>
+</svg>

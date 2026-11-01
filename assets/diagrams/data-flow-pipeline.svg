@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%" style="background:#090d16; font-family:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="shadowBox" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+
+  <!-- Title Header -->
+  <g transform="translate(60, 48)">
+    <rect x="0" y="0" width="38" height="38" rx="8" fill="url(#accentPurple)"/>
+    <text x="19" y="25" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="900">⇄</text>
+    <text x="52" y="24" fill="#ffffff" font-size="22" font-weight="800" letter-spacing="-0.5">FILEVAULT</text>
+    <text x="175" y="24" fill="#8b5cf6" font-size="22" font-weight="800">·</text>
+    <text x="190" y="24" fill="#94a3b8" font-size="16" font-weight="600">End-to-End Academic Data Flow &amp; Lifecycle</text>
+    <rect x="940" y="4" width="140" height="28" rx="14" fill="#2e1065" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="1010" y="22" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="700" letter-spacing="0.5">PIPELINE MAP</text>
+  </g>
+
+  <!-- Step 1: Ingestion & Verification -->
+  <g transform="translate(60, 115)" filter="url(#shadowBox)">
+    <rect width="240" height="420" rx="14" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1.2"/>
+    <rect x="16" y="16" width="32" height="32" rx="8" fill="#0284c7"/>
+    <text x="32" y="38" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">1</text>
+    <text x="56" y="30" fill="#38bdf8" font-size="11" font-weight="700">STAGE 1</text>
+    <text x="56" y="46" fill="#ffffff" font-size="15" font-weight="700">Submission &amp; Gate</text>
+
+    <g transform="translate(16, 70)" font-size="12" fill="#cbd5e1">
+      <rect width="208" height="65" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="22" fill="#38bdf8" font-weight="700">Student Submission</text>
+      <text x="12" y="40" font-size="11" fill="#94a3b8">Lecture slides, lab guides,</text>
+      <text x="12" y="55" font-size="11" fill="#94a3b8">syllabus &amp; past exam papers</text>
+
+      <rect y="80" width="208" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="102" fill="#38bdf8" font-weight="700">Bot Shield &amp; Honeypot</text>
+      <text x="12" y="120" font-size="11" fill="#94a3b8">Google reCAPTCHA v3 verify</text>
+      <text x="12" y="135" font-size="11" fill="#94a3b8">Webhook payload validation</text>
+
+      <rect y="170" width="208" height="85" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="192" fill="#38bdf8" font-weight="700">Integrity &amp; Virus Check</text>
+      <text x="12" y="210" font-size="11" fill="#94a3b8">MIME-type deep inspection</text>
+      <text x="12" y="225" font-size="11" fill="#94a3b8">SHA-256 hash generation</text>
+      <text x="12" y="240" font-size="11" fill="#94a3b8">Duplicate content detection</text>
+
+      <rect y="270" width="208" height="65" rx="8" fill="#0369a1" stroke="#38bdf8" stroke-width="1"/>
+      <text x="12" y="292" fill="#ffffff" font-weight="700">Pre-Signed URL Grant</text>
+      <text x="12" y="310" font-size="11" fill="#e0f2fe">Temporary, direct-to-cloud</text>
+      <text x="12" y="325" font-size="11" fill="#e0f2fe">secure upload ticket</text>
+    </g>
+  </g>
+
+  <!-- Arrow 1 to 2 -->
+  <g transform="translate(305, 310)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#38bdf8" stroke-width="2"/>
+    <polygon points="30,-4 38,0 30,4" fill="#38bdf8"/>
+  </g>
+
+  <!-- Step 2: Processing & Intelligence -->
+  <g transform="translate(340, 115)" filter="url(#shadowBox)">
+    <rect width="250" height="420" rx="14" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1.2"/>
+    <rect x="16" y="16" width="32" height="32" rx="8" fill="#7e22ce"/>
+    <text x="32" y="38" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">2</text>
+    <text x="56" y="30" fill="#c084fc" font-size="11" font-weight="700">STAGE 2</text>
+    <text x="56" y="46" fill="#ffffff" font-size="15" font-weight="700">AI &amp; Extraction</text>
+
+    <g transform="translate(16, 70)" font-size="12" fill="#cbd5e1">
+      <rect width="218" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="22" fill="#c084fc" font-weight="700">Multimodal OCR Pipeline</text>
+      <text x="12" y="40" font-size="11" fill="#94a3b8">Text &amp; formula extraction</text>
+      <text x="12" y="55" font-size="11" fill="#94a3b8">from scanned handwritten notes</text>
+
+      <rect y="90" width="218" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="112" fill="#c084fc" font-weight="700">Vector Embeddings</text>
+      <text x="12" y="130" font-size="11" fill="#94a3b8">Dense semantic chunking</text>
+      <text x="12" y="145" font-size="11" fill="#94a3b8">Indexed into pgvector</text>
+
+      <rect y="180" width="218" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="202" fill="#c084fc" font-weight="700">Taxonomy &amp; Metadata</text>
+      <text x="12" y="220" font-size="11" fill="#94a3b8">Auto-classification into Year,</text>
+      <text x="12" y="235" font-size="11" fill="#94a3b8">Branch, Subject &amp; Module</text>
+
+      <rect y="270" width="218" height="65" rx="8" fill="#581c87" stroke="#c084fc" stroke-width="1"/>
+      <text x="12" y="292" fill="#ffffff" font-weight="700">Manifest Update</text>
+      <text x="12" y="310" font-size="11" fill="#f3e8ff">Automated files.json &amp;</text>
+      <text x="12" y="325" font-size="11" fill="#f3e8ff">Redis cache regeneration</text>
+    </g>
+  </g>
+
+  <!-- Arrow 2 to 3 -->
+  <g transform="translate(595, 310)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#c084fc" stroke-width="2"/>
+    <polygon points="30,-4 38,0 30,4" fill="#c084fc"/>
+  </g>
+
+  <!-- Step 3: Cloud Storage & Distribution -->
+  <g transform="translate(630, 115)" filter="url(#shadowBox)">
+    <rect width="250" height="420" rx="14" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.2"/>
+    <rect x="16" y="16" width="32" height="32" rx="8" fill="#047857"/>
+    <text x="32" y="38" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">3</text>
+    <text x="56" y="30" fill="#34d399" font-size="11" font-weight="700">STAGE 3</text>
+    <text x="56" y="46" fill="#ffffff" font-size="15" font-weight="700">Storage &amp; Sync</text>
+
+    <g transform="translate(16, 70)" font-size="12" fill="#cbd5e1">
+      <rect width="218" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="22" fill="#34d399" font-weight="700">Cloud Object Store (S3/GCS)</text>
+      <text x="12" y="40" font-size="11" fill="#94a3b8">Hot tier for active semester</text>
+      <text x="12" y="55" font-size="11" fill="#94a3b8">Direct streaming with range reqs</text>
+
+      <rect y="90" width="218" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="112" fill="#34d399" font-weight="700">Hugging Face Dataset</text>
+      <text x="12" y="130" font-size="11" fill="#94a3b8">High-capacity dataset sync</text>
+      <text x="12" y="145" font-size="11" fill="#94a3b8">Git LFS revision tracking</text>
+
+      <rect y="180" width="218" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="202" fill="#34d399" font-weight="700">Edge CDN Invalidation</text>
+      <text x="12" y="220" font-size="11" fill="#94a3b8">Targeted cache tag purge</text>
+      <text x="12" y="235" font-size="11" fill="#94a3b8">Propagated globally in &lt;150ms</text>
+
+      <rect y="270" width="218" height="65" rx="8" fill="#064e3b" stroke="#34d399" stroke-width="1"/>
+      <text x="12" y="292" fill="#ffffff" font-weight="700">Lifecycle Archival Rule</text>
+      <text x="12" y="310" font-size="11" fill="#d1fae5">Automatic transition to</text>
+      <text x="12" y="325" font-size="11" fill="#d1fae5">cold storage after 180 days</text>
+    </g>
+  </g>
+
+  <!-- Arrow 3 to 4 -->
+  <g transform="translate(885, 310)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#34d399" stroke-width="2"/>
+    <polygon points="30,-4 38,0 30,4" fill="#34d399"/>
+  </g>
+
+  <!-- Step 4: Student Retrieval & Study -->
+  <g transform="translate(920, 115)" filter="url(#shadowBox)">
+    <rect width="220" height="420" rx="14" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="16" y="16" width="32" height="32" rx="8" fill="#b45309"/>
+    <text x="32" y="38" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="800">4</text>
+    <text x="56" y="30" fill="#fbbf24" font-size="11" font-weight="700">STAGE 4</text>
+    <text x="56" y="46" fill="#ffffff" font-size="15" font-weight="700">Student Access</text>
+
+    <g transform="translate(16, 70)" font-size="12" fill="#cbd5e1">
+      <rect width="188" height="65" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="22" fill="#fbbf24" font-weight="700">Instant Search &amp; Filter</text>
+      <text x="12" y="40" font-size="11" fill="#94a3b8">Fuzzy match across 1,000s</text>
+      <text x="12" y="55" font-size="11" fill="#94a3b8">of course files in &lt;10ms</text>
+
+      <rect y="80" width="188" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="102" fill="#fbbf24" font-weight="700">Rich In-Browser Preview</text>
+      <text x="12" y="120" font-size="11" fill="#94a3b8">PDF, images, video streaming</text>
+      <text x="12" y="135" font-size="11" fill="#94a3b8">and audio without downloads</text>
+
+      <rect y="170" width="188" height="75" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="12" y="192" fill="#fbbf24" font-weight="700">Multi-Select &amp; ZIP</text>
+      <text x="12" y="210" font-size="11" fill="#94a3b8">Client-side JSZip assembly</text>
+      <text x="12" y="225" font-size="11" fill="#94a3b8">Zero server compute load</text>
+
+      <rect y="260" width="188" height="75" rx="8" fill="#78350f" stroke="#fbbf24" stroke-width="1"/>
+      <text x="12" y="282" fill="#ffffff" font-weight="700">Compare &amp; RAG Study</text>
+      <text x="12" y="300" font-size="11" fill="#fef3c7">Side-by-side note comparison</text>
+      <text x="12" y="315" font-size="11" fill="#fef3c7">and AI-guided exam revision</text>
+    </g>
+  </g>
+
+  <!-- Bottom Data Lifecycle Flow -->
+  <g transform="translate(60, 560)">
+    <rect width="1080" height="95" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="30" y="30" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="1">CONTINUOUS ARCHIVAL &amp; DURABILITY GUARANTEE</text>
+    <text x="30" y="55" fill="#f8fafc" font-size="14" font-weight="600">Automated Multi-Cloud Redundancy (Hugging Face Datasets + Cloud Object Storage + GitHub Actions CI)</text>
+    <text x="30" y="75" fill="#94a3b8" font-size="12">Immutable cryptographic hashes prevent tampering. Manifest syncing ensures zero broken links for students across academic semesters.</text>
+    
+    <rect x="940" y="30" width="110" height="34" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+    <text x="995" y="52" text-anchor="middle" fill="#34d399" font-size="12" font-weight="700">ZERO DATA LOSS</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(60, 680)">
+    <text x="0" y="20" fill="#64748b" font-size="12">FileVault Academic Pipeline · NITK Surathkal · Designed for Scalable High-Concurrency Courseware Delivery</text>
+  </g>
+</svg>
