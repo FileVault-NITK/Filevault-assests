@@ -1,4 +1,4 @@
-# FileVault NITK — Cloud Grant & Technical Documentation
+# FileVault NITK - Cloud Grant & Technical Documentation
 
 <div align="center">
 
