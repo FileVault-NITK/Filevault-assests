@@ -1,4 +1,4 @@
-# FileVault NITK — Project Showcase & Claude Integration Request
+# FileVault NITK - Project Showcase & Claude Integration Request
 
 <div align="center">
 
@@ -100,7 +100,7 @@ All architectural blueprints are rendered as scalable, publication-grade vector 
 
 **Sai Varshith M**  
 B.Tech Scholar, National Institute of Technology Karnataka, Surathkal  
-Creator & Lead Architect, FileVault  
+Lead Architect & Creator of FileVault  
 * Institutional Inquiries: `saivarshith.mitukula@gmail.com`  
 * Project Website: [https://filevault.cc](https://filevault.cc)  
 * Organization: [FileVault-NITK](https://github.com/FileVault-NITK)
