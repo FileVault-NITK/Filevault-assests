@@ -1,4 +1,4 @@
-# FileVault NITK — Claude Team Project Showcase & Architecture Dossier
+# FileVault NITK - Claude Team Project Showcase & Architecture Dossier
 
 <div align="center">
 
