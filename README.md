@@ -82,7 +82,7 @@ All architectural blueprints are rendered as scalable, self-contained, publicati
 **Sai Varshith M**  
 B.Tech Scholar, National Institute of Technology Karnataka, Surathkal  
 Lead Architect & Creator of FileVault  
-* Institutional Inquiries: `saivarshith.nitk@gmail.com`  
+* Institutional Inquiries: `saivarshith.mitukula@gmail.com`  
 * Project Website: [https://filevault.cc](https://filevault.cc)  
 * Organization: [FileVault-NITK](https://github.com/FileVault-NITK)
 
