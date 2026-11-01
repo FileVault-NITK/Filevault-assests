@@ -17,6 +17,10 @@
       <stop offset="0%" stop-color="#10b981"/>
       <stop offset="100%" stop-color="#34d399"/>
     </linearGradient>
+    <linearGradient id="accentClaude" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
     <filter id="shadowBox" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
     </filter>
@@ -30,12 +34,12 @@
     <text x="19" y="25" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="900">🛡️</text>
     <text x="52" y="24" fill="#ffffff" font-size="22" font-weight="800" letter-spacing="-0.5">FILEVAULT</text>
     <text x="175" y="24" fill="#10b981" font-size="22" font-weight="800">·</text>
-    <text x="190" y="24" fill="#94a3b8" font-size="16" font-weight="600">Defense-in-Depth Security Architecture</text>
+    <text x="190" y="24" fill="#94a3b8" font-size="16" font-weight="600">Defense-in-Depth &amp; Claude AI Privacy Architecture</text>
     <rect x="910" y="4" width="170" height="28" rx="14" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
-    <text x="995" y="22" text-anchor="middle" fill="#a7f3d0" font-size="11" font-weight="700" letter-spacing="0.5">ZERO-TRUST SECURITY</text>
+    <text x="995" y="22" text-anchor="middle" fill="#a7f3d0" font-size="11" font-weight="700" letter-spacing="0.5">ZERO-TRUST PRIVACY</text>
   </g>
 
-  <!-- 4 Concentric / Layered Defense Blocks -->
+  <!-- 4 Concentric Defense Blocks -->
   
   <!-- Layer 1: Perimeter -->
   <g transform="translate(60, 110)" filter="url(#shadowBox)">
@@ -63,21 +67,21 @@
   <g transform="translate(60, 245)" filter="url(#shadowBox)">
     <rect width="1080" height="115" rx="12" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.2"/>
     <rect x="20" y="16" width="6" height="83" rx="3" fill="#f59e0b"/>
-    <text x="36" y="38" fill="#fbbf24" font-size="13" font-weight="700" letter-spacing="1">LAYER 2 · API GATEWAY &amp; ACCESS CONTROL</text>
-    <text x="36" y="62" fill="#ffffff" font-size="16" font-weight="700">Tokenized File Streaming &amp; Supabase Edge Isolation</text>
+    <text x="36" y="38" fill="#fbbf24" font-size="13" font-weight="700" letter-spacing="1">LAYER 2 · API GATEWAY &amp; CLAUDE INTEGRATION PRIVACY</text>
+    <text x="36" y="62" fill="#ffffff" font-size="16" font-weight="700">Tokenized File Streaming &amp; Claude Zero Data Retention</text>
 
     <g transform="translate(36, 75)" font-size="12">
       <rect x="0" y="5" width="255" height="26" rx="6" fill="#451a03" stroke="#d97706" stroke-width="1"/>
-      <text x="127" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">Zero-Secret Browser Exposure (Config.js)</text>
+      <text x="127" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">Zero-Secret Browser Exposure</text>
 
       <rect x="270" y="5" width="245" height="26" rx="6" fill="#451a03" stroke="#d97706" stroke-width="1"/>
-      <text x="392" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">Edge Function Cryptographic Token Sign</text>
+      <text x="392" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">Claude API Zero-Retention Bound</text>
 
       <rect x="530" y="5" width="245" height="26" rx="6" fill="#451a03" stroke="#d97706" stroke-width="1"/>
       <text x="652" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">Short-Lived Signed URLs (15 Min TTL)</text>
 
       <rect x="790" y="5" width="240" height="26" rx="6" fill="#451a03" stroke="#d97706" stroke-width="1"/>
-      <text x="910" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">HTTP-Only SameSite Cookie Bounds</text>
+      <text x="910" y="22" text-anchor="middle" fill="#fde68a" font-weight="600">Prompt Governance &amp; Grounding</text>
     </g>
   </g>
 
@@ -93,13 +97,13 @@
       <text x="120" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Row-Level Security Policies (RLS)</text>
 
       <rect x="255" y="5" width="250" height="26" rx="6" fill="#172554" stroke="#2563eb" stroke-width="1"/>
-      <text x="380" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Role-Based Access Control (Admin/Curator)</text>
+      <text x="380" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Role-Based Access Control</text>
 
       <rect x="520" y="5" width="240" height="26" rx="6" fill="#172554" stroke="#2563eb" stroke-width="1"/>
       <text x="640" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Automated Audit Trail of Submissions</text>
 
       <rect x="775" y="5" width="255" height="26" rx="6" fill="#172554" stroke="#2563eb" stroke-width="1"/>
-      <text x="902" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Automated Sensitive Data Scrubbing</text>
+      <text x="902" y="22" text-anchor="middle" fill="#bfdbfe" font-weight="600">Zero PII Tracking / No Cookies</text>
     </g>
   </g>
 
@@ -118,15 +122,15 @@
       <text x="382" y="22" text-anchor="middle" fill="#a7f3d0" font-weight="600">Cryptographic SHA-256 File Hashes</text>
 
       <rect x="520" y="5" width="245" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
-      <text x="642" y="22" text-anchor="middle" fill="#a7f3d0" font-weight="600">Cloud KMS Hardware Security Modules</text>
+      <text x="642" y="22" text-anchor="middle" fill="#a7f3d0" font-weight="600">Envelope Key Management</text>
 
       <rect x="780" y="5" width="250" height="26" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
-      <text x="905" y="22" text-anchor="middle" fill="#a7f3d0" font-weight="600">Cross-Region Immutable Snapshots</text>
+      <text x="905" y="22" text-anchor="middle" fill="#a7f3d0" font-weight="600">Cross-Cloud Backup Snapshots</text>
     </g>
   </g>
 
   <!-- Footer -->
   <g transform="translate(60, 680)">
-    <text x="0" y="20" fill="#64748b" font-size="12">FileVault Defense-in-Depth Specification · Compliant with Institutional Data Integrity &amp; Student Privacy Best Practices</text>
+    <text x="0" y="20" fill="#64748b" font-size="12">FileVault Defense-in-Depth &amp; Claude AI Privacy · NITK Surathkal</text>
   </g>
 </svg>

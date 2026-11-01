@@ -9,6 +9,10 @@
       <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
       <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
     </linearGradient>
+    <linearGradient id="accentClaude" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
     <linearGradient id="accentBlue" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#3b82f6"/>
       <stop offset="100%" stop-color="#60a5fa"/>
@@ -16,10 +20,6 @@
     <linearGradient id="accentEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#10b981"/>
       <stop offset="100%" stop-color="#34d399"/>
-    </linearGradient>
-    <linearGradient id="accentAmber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#fbbf24"/>
     </linearGradient>
     <filter id="shadowBox" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
@@ -36,13 +36,13 @@
 
   <!-- Title Header -->
   <g transform="translate(60, 48)">
-    <rect x="0" y="0" width="38" height="38" rx="8" fill="url(#accentBlue)"/>
-    <text x="19" y="25" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="900">☁️</text>
+    <rect x="0" y="0" width="38" height="38" rx="8" fill="url(#accentClaude)"/>
+    <text x="19" y="25" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="900">✦</text>
     <text x="52" y="24" fill="#ffffff" font-size="22" font-weight="800" letter-spacing="-0.5">FILEVAULT</text>
-    <text x="175" y="24" fill="#3b82f6" font-size="22" font-weight="800">·</text>
-    <text x="190" y="24" fill="#94a3b8" font-size="16" font-weight="600">Cloud Infrastructure Topology &amp; Resource Sizing</text>
-    <rect x="910" y="4" width="170" height="28" rx="14" fill="#172554" stroke="#3b82f6" stroke-width="1"/>
-    <text x="995" y="22" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700" letter-spacing="0.5">HIGH AVAILABILITY (HA)</text>
+    <text x="175" y="24" fill="#f59e0b" font-size="22" font-weight="800">·</text>
+    <text x="190" y="24" fill="#94a3b8" font-size="16" font-weight="600">System Topology &amp; Claude Max Sizing</text>
+    <rect x="890" y="4" width="190" height="28" rx="14" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+    <text x="985" y="22" text-anchor="middle" fill="#fde68a" font-size="11" font-weight="700" letter-spacing="0.5">CLAUDE MAX ENABLED</text>
   </g>
 
   <!-- Left: Ingestion & Edge Tier -->
@@ -66,7 +66,7 @@
       <text x="16" y="26" fill="#38bdf8" font-size="13" font-weight="700">Edge Security Gateway</text>
       <text x="16" y="48" fill="#cbd5e1" font-size="11">· Web Application Firewall (WAF)</text>
       <text x="16" y="66" fill="#cbd5e1" font-size="11">· Intelligent L3/L4/L7 DDoS mitigation</text>
-      <text x="16" y="84" fill="#cbd5e1" font-size="11">· Google reCAPTCHA Enterprise bot verification</text>
+      <text x="16" y="84" fill="#cbd5e1" font-size="11">· Google reCAPTCHA v3 bot verification</text>
     </g>
 
     <g transform="translate(20, 310)">
@@ -82,16 +82,16 @@
       <text x="16" y="26" fill="#818cf8" font-size="13" font-weight="700">Exam-Period Traffic Spikes</text>
       <text x="16" y="48" fill="#c7d2fe" font-size="11">· Baseline: 2,000 daily active students</text>
       <text x="16" y="66" fill="#c7d2fe" font-size="11">· Peak: 25,000+ concurrent requests</text>
-      <text x="16" y="84" fill="#c7d2fe" font-size="11">· 100TB+ annual academic file egress capacity</text>
+      <text x="16" y="84" fill="#c7d2fe" font-size="11">· High-speed academic file streaming</text>
     </g>
   </g>
 
-  <!-- Middle: Cloud Compute & Storage Tier -->
+  <!-- Middle: Compute & Storage Tier -->
   <g transform="translate(420, 110)" filter="url(#shadowBox)">
     <rect width="360" height="560" rx="14" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.2"/>
     <rect x="20" y="20" width="4" height="28" rx="2" fill="url(#accentEmerald)"/>
     <text x="34" y="32" fill="#6ee7b7" font-size="11" font-weight="700" letter-spacing="0.5">COMPUTE &amp; STORAGE CLUSTER</text>
-    <text x="34" y="52" fill="#ffffff" font-size="16" font-weight="700">Scalable Cloud Backend</text>
+    <text x="34" y="52" fill="#ffffff" font-size="16" font-weight="700">Scalable System Backend</text>
 
     <g transform="translate(20, 80)">
       <rect width="320" height="110" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
@@ -104,11 +104,11 @@
 
     <g transform="translate(20, 210)">
       <rect width="320" height="110" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-      <text x="16" y="26" fill="#34d399" font-size="13" font-weight="700">Cloud Object Store (Multi-Region S3 / GCS)</text>
-      <text x="16" y="48" fill="#cbd5e1" font-size="11">· Multi-region active replication</text>
-      <text x="16" y="66" fill="#cbd5e1" font-size="11">· 99.999999999% (11 9's) durability</text>
+      <text x="16" y="26" fill="#34d399" font-size="13" font-weight="700">Multi-Tier Object Storage Infrastructure</text>
+      <text x="16" y="48" fill="#cbd5e1" font-size="11">· High durability object storage (11 9's)</text>
+      <text x="16" y="66" fill="#cbd5e1" font-size="11">· Hugging Face Hub datasets backend sync</text>
       <text x="16" y="84" fill="#cbd5e1" font-size="11">· Hot (current sem), Warm (past 2 yrs), Cold (archive)</text>
-      <text x="16" y="102" fill="#94a3b8" font-size="10">Target capacity: 10 TB expandable to 100 TB</text>
+      <text x="16" y="102" fill="#94a3b8" font-size="10">Designed for 10 TB expandable to 100 TB</text>
     </g>
 
     <g transform="translate(20, 340)">
@@ -116,31 +116,31 @@
       <text x="16" y="26" fill="#34d399" font-size="13" font-weight="700">Managed PostgreSQL &amp; Redis Cache</text>
       <text x="16" y="48" fill="#cbd5e1" font-size="11">· High-Availability primary with read replicas</text>
       <text x="16" y="66" fill="#cbd5e1" font-size="11">· Redis cluster for real-time manifest &amp; rate limit</text>
-      <text x="16" y="84" fill="#cbd5e1" font-size="11">· Automated point-in-time recovery (PITR)</text>
+      <text x="16" y="84" fill="#cbd5e1" font-size="11">· Point-in-time recovery (PITR) enabled</text>
     </g>
 
     <g transform="translate(20, 455)">
       <rect width="320" height="75" rx="10" fill="#064e3b" stroke="#059669" stroke-width="1"/>
-      <text x="16" y="24" fill="#a7f3d0" font-size="12" font-weight="700">Cloud Storage Tiering Savings</text>
-      <text x="16" y="44" fill="#d1fae5" font-size="11">Automated lifecycle transitions cut object storage</text>
-      <text x="16" y="60" fill="#d1fae5" font-size="11">costs by 68% while preserving 10-year archives.</text>
+      <text x="16" y="24" fill="#a7f3d0" font-size="12" font-weight="700">Efficient Storage Hierarchy</text>
+      <text x="16" y="44" fill="#d1fae5" font-size="11">Automated lifecycle transitions optimize performance</text>
+      <text x="16" y="60" fill="#d1fae5" font-size="11">while preserving 10-year historical question archives.</text>
     </g>
   </g>
 
-  <!-- Right: AI & Document Intelligence Cluster -->
+  <!-- Right: Claude AI & Document Intelligence Cluster -->
   <g transform="translate(810, 110)" filter="url(#shadowBox)">
-    <rect width="330" height="560" rx="14" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.2"/>
-    <rect x="20" y="20" width="4" height="28" rx="2" fill="url(#accentAmber)"/>
+    <rect width="330" height="560" rx="14" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="20" y="20" width="4" height="28" rx="2" fill="url(#accentClaude)"/>
     <text x="34" y="32" fill="#fde68a" font-size="11" font-weight="700" letter-spacing="0.5">DOCUMENT INTELLIGENCE</text>
-    <text x="34" y="52" fill="#ffffff" font-size="16" font-weight="700">Cloud Max AI Compute</text>
+    <text x="34" y="52" fill="#ffffff" font-size="16" font-weight="700">Claude Max AI Engine</text>
 
     <g transform="translate(20, 80)">
       <rect width="290" height="110" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-      <text x="16" y="26" fill="#fbbf24" font-size="13" font-weight="700">GPU-Accelerated Multimodal OCR</text>
+      <text x="16" y="26" fill="#fbbf24" font-size="13" font-weight="700">Claude Vision Multimodal OCR</text>
       <text x="16" y="48" fill="#cbd5e1" font-size="11">· Ingestion pipeline for scanned lecture notes</text>
       <text x="16" y="66" fill="#cbd5e1" font-size="11">· LaTeX equation and math symbols extraction</text>
       <text x="16" y="84" fill="#cbd5e1" font-size="11">· Diagram captioning &amp; figure extraction</text>
-      <text x="16" y="102" fill="#94a3b8" font-size="10">NVIDIA T4 / L4 Cloud Acceleration</text>
+      <text x="16" y="102" fill="#94a3b8" font-size="10">Claude 3.5 Sonnet Vision Intelligence</text>
     </g>
 
     <g transform="translate(20, 210)">
@@ -154,7 +154,7 @@
 
     <g transform="translate(20, 340)">
       <rect width="290" height="95" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
-      <text x="16" y="26" fill="#fbbf24" font-size="13" font-weight="700">RAG Student Study Assistant</text>
+      <text x="16" y="26" fill="#fbbf24" font-size="13" font-weight="700">Claude RAG Study Assistant</text>
       <text x="16" y="48" fill="#cbd5e1" font-size="11">· Grounded Q&amp;A on NITK course syllabus</text>
       <text x="16" y="66" fill="#cbd5e1" font-size="11">· Auto-generate practice quizzes &amp; summaries</text>
       <text x="16" y="84" fill="#cbd5e1" font-size="11">· Strict zero-hallucination citation bounds</text>
@@ -162,9 +162,9 @@
 
     <g transform="translate(20, 455)">
       <rect width="290" height="75" rx="10" fill="#451a03" stroke="#d97706" stroke-width="1"/>
-      <text x="16" y="24" fill="#fde68a" font-size="12" font-weight="700">Cloud Max AI Compute Need</text>
-      <text x="16" y="44" fill="#fef3c7" font-size="11">Requires dedicated cloud GPU inference quotas</text>
-      <text x="16" y="60" fill="#fef3c7" font-size="11">and LLM token allowances for academic impact.</text>
+      <text x="16" y="24" fill="#fde68a" font-size="12" font-weight="700">Claude Max Capabilities</text>
+      <text x="16" y="44" fill="#fef3c7" font-size="11">High-throughput token capacity and 200k context</text>
+      <text x="16" y="60" fill="#fef3c7" font-size="11">powers deep full-syllabus reasoning for students.</text>
     </g>
   </g>
 
@@ -172,8 +172,8 @@
   <g transform="translate(60, 695)">
     <rect width="1080" height="50" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
     <text x="30" y="30" fill="#94a3b8" font-size="13">
-      <tspan fill="#60a5fa" font-weight="700">FileVault Cloud Infrastructure Sizing</tspan> · Engineered for High-Concurrency Academic Workloads · NITK Surathkal
+      <tspan fill="#f59e0b" font-weight="700">FileVault System Topology</tspan> · Engineered for High-Concurrency Academic Workloads · NITK Surathkal
     </text>
-    <text x="1050" y="30" text-anchor="end" fill="#64748b" font-size="12">Cloud Grant Proposal Specification</text>
+    <text x="1050" y="30" text-anchor="end" fill="#64748b" font-size="12">Claude Max Project Showcase</text>
   </g>
 </svg>

@@ -82,9 +82,16 @@ A strict security tenet of FileVault: **No secret keys, tokens, or private crede
 - Downloads are mediated via cryptographically signed URLs with a **900-second (15-minute) Time-To-Live (TTL)**.
 - URLs expire automatically after use, preventing hotlinking and unauthorized third-party bandwidth leeching.
 
+#### 4.3 Claude AI Zero Data Retention (ZDR) & Privacy Architecture
+FileVault's Claude AI integration is governed by strict enterprise privacy boundaries:
+- **Zero Data Retention:** Prompts, scanned lecture notes, and student study queries sent to the Claude API are never stored by Anthropic or used to train foundation models.
+- **Strict Ephemeral Invocations:** Ingestion sessions are processed ephemerally in memory; embeddings are stored in local isolated PostgreSQL instances with Row-Level Security.
+- Consult the complete privacy specification: **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**.
+
 ---
 
 ### 5. Layer 3: Database Security & Access Control
+
 
 #### 5.1 PostgreSQL Row-Level Security (RLS)
 The database enforces strict RLS policies on all tables (`profiles`, `contributions`, `analytics`):
@@ -156,3 +163,4 @@ FileVault operates strictly under the principles of **Fair Use for Educational P
 <div align="center">
 <sub>FileVault Security & Governance Specification · National Institute of Technology Karnataka, Surathkal · © 2026</sub>
 </div>
+

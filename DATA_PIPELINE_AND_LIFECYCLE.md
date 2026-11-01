@@ -57,15 +57,17 @@ Stage 1: Ingestion Gateway Flow
 
 ---
 
-### 3. Stage 2: AI Processing & Intelligence (Cloud Max)
+### 3. Stage 2: Claude AI Processing & Intelligence (Claude Max)
 
-Once files are stored in the staging bucket, background cloud workers execute the document intelligence pipeline:
+Detailed processing and throughput limits are governed by the **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**.
+
+Once files are stored in the staging bucket, background workers execute the Claude document intelligence pipeline:
 
 ```
-Stage 2: AI Extraction Pipeline
+Stage 2: Claude AI Extraction Pipeline
 ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
-│ Staged Document  │ ──► │ GPU Multimodal   │ ──► │ Formula Parsing  │
-│ (Scanned/PDF)    │     │ OCR Pipeline     │     │ & Schema Tokenize│
+│ Staged Document  │ ──► │ Claude Vision    │ ──► │ Formula Parsing  │
+│ (Scanned/PDF)    │     │ Multimodal OCR   │     │ & Schema Tokenize│
 └──────────────────┘     └──────────────────┘     └────────┬─────────┘
                                                            │
                                                            ▼
@@ -75,12 +77,14 @@ Stage 2: AI Extraction Pipeline
 └──────────────────┘     └──────────────────┘     └──────────────────┘
 ```
 
-#### 3.1 GPU Multimodal OCR Engine
+#### 3.1 Claude Vision Multimodal OCR Engine
 - Scanned handwritten notes (which represent over 40% of student-shared materials) are notoriously difficult for standard text search.
-- Cloud GPU workers (NVIDIA L4/T4) run fine-tuned multimodal OCR models that extract:
+- Claude 3.5 Sonnet / Claude Vision processes these pages, extracting:
   - Handwritten mathematical derivations into standardized **LaTeX syntax**.
   - Block diagrams, state machines, and electronic circuit topologies into descriptive semantic tags.
-  - Handwritten text with confidence scoring.
+  - Handwritten notes into clean, structured Markdown.
+- Sizing specifications: **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**.
+
 
 #### 3.2 Semantic Chunking & Vector Embeddings
 - Extracted text and slide transcripts are segmented into semantically coherent chunks (500 tokens with 50-token overlap).
@@ -156,3 +160,4 @@ Stage 4: Student Retrieval Experience
 <div align="center">
 <sub>FileVault Data Lifecycle Specification · National Institute of Technology Karnataka (NITK), Surathkal · © 2026</sub>
 </div>
+

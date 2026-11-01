@@ -47,9 +47,10 @@ The architecture is structured across four distinct functional tiers:
 └──────────────────────────────────┬─────────────────────────────────────┘
                                    │ S3 API / REST / Embeddings
 ┌──────────────────────────────────▼─────────────────────────────────────┐
-│ TIER 4: MULTI-TIER STORAGE & CLOUD MAX AI ENGINE                       │
-│ Hot Object Store · Warm HF Hub · Cold Glacier · pgvector · GPU OCR     │
+│ TIER 4: MULTI-TIER STORAGE & CLAUDE MAX AI ENGINE                      │
+│ Hot Object Store · Warm HF Hub · Cold Glacier · pgvector · Claude AI   │
 └────────────────────────────────────────────────────────────────────────┘
+
 ```
 
 ---
@@ -119,23 +120,26 @@ When a student requests a restricted or rate-limited resource:
 
 ---
 
-### 6. Tier 4: Storage Infrastructure & Cloud Max Sizing
+### 6. Tier 4: Storage Infrastructure & Claude Max Sizing
+
+Detailed parameters for capacity and concurrency are specified in **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**.
 
 ```
 Storage Hierarchy Specification
 ┌──────────────┬────────────────────────┬─────────────────────┬───────────────────────────┐
 │ Tier         │ Technology             │ Capacity & Latency  │ Workload Content          │
 ├──────────────┼────────────────────────┼─────────────────────┼───────────────────────────┤
-│ Hot Tier     │ Cloud S3 / GCS Buckets │ 10 TB, &lt; 25ms TTFB   │ Current semester notes    │
-│ Warm Tier    │ Hugging Face Datasets  │ 50 TB, &lt; 150ms TTFB  │ 2-year question archives  │
+│ Hot Tier     │ Cloud S3 / GCS Buckets │ 10 TB, < 25ms TTFB   │ Current semester notes    │
+│ Warm Tier    │ Hugging Face Datasets  │ 50 TB, < 150ms TTFB  │ 2-year question archives  │
 │ Cold Tier    │ Cloud Glacier Archive  │ 100 TB, Minutes     │ 10-year historical papers │
-│ Cache Tier   │ Managed Redis Cluster  │ 6 GB RAM, &lt; 1ms      │ Manifest & session states │
+│ Cache Tier   │ Managed Redis Cluster  │ 6 GB RAM, < 1ms      │ Manifest & session states │
 └──────────────┴────────────────────────┴─────────────────────┴───────────────────────────┘
 ```
 
-#### 6.1 Multi-Region Cloud Object Storage (Cloud Max)
+#### 6.1 Multi-Region Cloud Object Storage (Claude Max Spec)
 - Employs dual-region replication across high-density academic hubs.
 - Automatic lifecycle policies transition files older than 180 days to cold storage, lowering long-term operating costs by 68%.
+- Explore complete capacity specifications: **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**.
 
 #### 6.2 Managed PostgreSQL Database with Row-Level Security
 - Stores student contributor profiles, subject taxonomies, verified download analytics, and document metadata.
@@ -143,28 +147,30 @@ Storage Hierarchy Specification
 
 ---
 
-### 7. AI Document Intelligence Engine (Cloud Max Core)
+### 7. Claude AI Document Intelligence Engine (Claude Max Core)
 
-The marquee capability introduced under the Cloud Max grant is **Multimodal Academic Document Intelligence**.
+The marquee intelligence capability of FileVault is powered by **Claude AI**, architected according to the **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**.
 
 ```
-Document Ingestion & AI Pipeline
+Document Ingestion & Claude AI Pipeline
 ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
-│ Scanned Lecture  │ ──► │ GPU Cloud OCR    │ ──► │ Vector Embedding │
+│ Scanned Lecture  │ ──► │ Claude Vision    │ ──► │ Vector Embedding │
 │ Handwritten Note │     │ Formula + Schema │     │ 1536-dim pgvector│
 └──────────────────┘     └──────────────────┘     └────────┬─────────┘
                                                            │
                                                            ▼
 ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
-│ Student Semantic │ ◄── │ Grounded RAG     │ ◄── │ HNSW Similarity  │
+│ Student Semantic │ ◄── │ Claude Grounded  │ ◄── │ HNSW Similarity  │
 │ Query Result     │     │ Study Assistant  │     │ Index Lookup     │
 └──────────────────┘     └──────────────────┘     └──────────────────┘
 ```
 
-1. **Multimodal GPU OCR:** Cloud GPU instances (NVIDIA L4/T4) process scanned handwritten lecture notes, converting mathematical derivations and handwritten diagrams into searchable LaTeX and textual tokens.
+1. **Claude Vision Multimodal OCR:** Claude 3.5 Sonnet processes scanned handwritten lecture notes, converting mathematical derivations and handwritten diagrams into searchable LaTeX and textual tokens.
 2. **Dense Vector Embeddings:** High-dimensional vector models convert document chunks into embeddings stored in PostgreSQL via `pgvector`.
 3. **Sub-15ms Similarity Search:** An **HNSW (Hierarchical Navigable Small World)** vector index enables students to search for engineering principles across thousands of handwritten pages with instantaneous results.
-4. **Grounded RAG Assistant:** An AI study assistant strictly bounded by the official courseware syllabus, preventing hallucinations and providing exact page-level citations for every answer.
+4. **Claude Grounded RAG Assistant:** An AI study assistant strictly bounded by the official courseware syllabus, preventing hallucinations and providing exact page-level citations for every answer.
+5. **Full Sizing Details:** For complete token throughput, context window sizing, and multimodal processing limits, consult **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**.
+
 
 ---
 
@@ -200,3 +206,4 @@ Document Ingestion & AI Pipeline
 <div align="center">
 <sub>Designed and authored by Sai Varshith M · National Institute of Technology Karnataka, Surathkal · © 2026 FileVault NITK</sub>
 </div>
+
