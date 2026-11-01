@@ -2,14 +2,19 @@
 
 ## FileVault: Next-Generation Claude Vision OCR, Semantic Search, and Grounded RAG Architecture
 
-**Status:** AI Technical Roadmap  
+**Status:** Proposed Integration Roadmap (Seeking Claude Team Support)  
 **Specifications Link:** **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**  
-**Platform Target:** [https://filevault.cc](https://filevault.cc)  
+**Platform Target:** [https://filevault.cc](https://filevault.cc) (Live in Production)  
 **Author:** Sai Varshith M, National Institute of Technology Karnataka (NITK), Surathkal  
 
 ---
 
+> **Integration Notice:** FileVault is fully live today at [filevault.cc](https://filevault.cc) serving 7,500+ engineering students. **Claude is not yet integrated.** This roadmap outlines our technical plan to integrate Claude Vision and Grounded RAG with the help and subscription support of the Claude / Anthropic team.
+
+---
+
 ### 1. The Challenge: Invisible Academic Knowledge
+
 
 In higher engineering education, the most valuable learning resources are often **invisible to traditional search engines**:
 - Over **40% of student-contributed study materials** are photographs or scans of handwritten notebooks, whiteboard derivations, and hand-sketched circuit diagrams.

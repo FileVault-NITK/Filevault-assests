@@ -22,9 +22,10 @@
 
 * **Institution:** National Institute of Technology Karnataka (NITK), Surathkal (Institute of National Importance)
 * **Lead Architect:** Sai Varshith M (B.Tech Scholar, NITK)
-* **Live Production Platform:** [https://filevault.cc](https://filevault.cc)
+* **Live Production Platform:** [https://filevault.cc](https://filevault.cc) (Fully operational today)
 * **The Mission:** Provide an ultra-fast, zero-friction academic repository that guarantees thousands of engineering students instant access to course notes, lab guides, and exam archives with zero paywalls.
-* **Claude AI Vision:** Integrating **Claude AI** and **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)** to unlock multimodal OCR for handwritten notes, 200,000-token full-syllabus reasoning, and grounded RAG study tools.
+* **The Ask:** We built FileVault, but **Claude is not yet integrated**. We are requesting the **Claude Team's help, guidance, and a Claude subscription** to integrate **Claude AI** according to our **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)** (unlocking multimodal OCR for handwritten notes, 200k syllabus reasoning, and grounded RAG revision).
+
 
 ---
 
@@ -127,11 +128,12 @@ FileVault is a live, indispensable utility on the NITK Surathkal campus:
 
 ---
 
-## Slide 6: Claude AI Integration (Claude Max Enabled)
+## Slide 6: Proposed Claude AI Integration (The Ask)
 
 ### Unlocking Handwritten Notes & Intelligent Study
 
-With Claude AI, FileVault bridges the gap between physical notebooks and AI document intelligence:
+We built the core distribution platform, and now we are asking for your help to integrate Claude AI to bridge the gap between physical notebooks and AI document intelligence:
+
 
 ```
 Physical Notebook (Handwritten)

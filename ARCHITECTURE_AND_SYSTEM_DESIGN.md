@@ -147,12 +147,12 @@ Storage Hierarchy Specification
 
 ---
 
-### 7. Claude AI Document Intelligence Engine (Claude Max Core)
+### 7. Proposed Claude AI Document Intelligence Engine (Requested Integration)
 
-The marquee intelligence capability of FileVault is powered by **Claude AI**, architected according to the **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**.
+> **Integration Context:** FileVault's web application, edge distribution, and multi-tier storage are 100% operational in production at [filevault.cc](https://filevault.cc). **Claude is not yet integrated.** We are proposing to integrate Claude AI as our core document intelligence layer, architected according to the **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**, with the help and subscription support of the Claude / Anthropic team.
 
 ```
-Document Ingestion & Claude AI Pipeline
+Planned Document Ingestion & Claude AI Pipeline
 ┌──────────────────┐     ┌──────────────────┐     ┌──────────────────┐
 │ Scanned Lecture  │ ──► │ Claude Vision    │ ──► │ Vector Embedding │
 │ Handwritten Note │     │ Formula + Schema │     │ 1536-dim pgvector│
@@ -165,11 +165,12 @@ Document Ingestion & Claude AI Pipeline
 └──────────────────┘     └──────────────────┘     └──────────────────┘
 ```
 
-1. **Claude Vision Multimodal OCR:** Claude 3.5 Sonnet processes scanned handwritten lecture notes, converting mathematical derivations and handwritten diagrams into searchable LaTeX and textual tokens.
-2. **Dense Vector Embeddings:** High-dimensional vector models convert document chunks into embeddings stored in PostgreSQL via `pgvector`.
-3. **Sub-15ms Similarity Search:** An **HNSW (Hierarchical Navigable Small World)** vector index enables students to search for engineering principles across thousands of handwritten pages with instantaneous results.
-4. **Claude Grounded RAG Assistant:** An AI study assistant strictly bounded by the official courseware syllabus, preventing hallucinations and providing exact page-level citations for every answer.
+1. **Claude Vision Multimodal OCR (Proposed):** Claude 3.5 Sonnet will process scanned handwritten lecture notes, converting mathematical derivations and handwritten diagrams into searchable LaTeX and textual tokens.
+2. **Dense Vector Embeddings (Proposed):** High-dimensional vector models will convert document chunks into embeddings stored in PostgreSQL via `pgvector`.
+3. **Sub-15ms Similarity Search (Proposed):** An **HNSW (Hierarchical Navigable Small World)** vector index enables students to search for engineering principles across thousands of handwritten pages with instantaneous results.
+4. **Claude Grounded RAG Assistant (Proposed):** An AI study assistant strictly bounded by the official courseware syllabus, preventing hallucinations and providing exact page-level citations for every answer.
 5. **Full Sizing Details:** For complete token throughput, context window sizing, and multimodal processing limits, consult **[Claude Max Specifications](CLAUDE_MAX_SPECIFICATIONS.md)**.
+
 
 
 ---
